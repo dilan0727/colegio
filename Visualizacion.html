@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MG Accesorios || Administración de Productos</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/f7e8b19d78.js"
+      crossorigin="anonymous"
+    ></script>
+    <style></style>
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="logo">
+        <img
+          class="logo__imagen"
+          src="imagenes/logo.png"
+          alt="Este es el logo"
+        />
+      </div>
+      <div class="titulo">
+        <h1>Inventario de Accesorios</h1>
+      </div>
+    </header>
+    <div class="contenido__usuario">
+      <nav class="contenido__menu">
+        <ul class="menu__contenedor">
+          <li class="menu__info">
+            <div class="menu__avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="menu__rol">
+              <p class="rol__nombre">
+                <span class="rol__label">Nombre:</span> Camilo Martinez
+              </p>
+              <p class="rol__cargo">
+                <span class="rol__label">Rol:</span> Administrador
+              </p>
+              <p class="rol__id">
+                <span class="rol__label">ID:</span> 111111111
+              </p>
+            </div>
+          </li>
+          <li class="menu__elemento menu__adminProductos menu__seleccionado">
+            <a href="administracion_productos.html" class="menu__link"
+              >Administración de Productos</a
+            >
+          </li>
+          <li class="menu__elemento menu__registroUsuarios">
+            <a href="registro_usuarios.html" class="menu__link"
+              >Registro de Usuarios</a
+            >
+          </li>
+
+          <li class="menu__elemento menu__crearAccesorio">
+            <a href="crear_accesorio.html" class="menu__link"
+              >Crear Accesorio</a
+            >
+          </li>
+
+          <li class="menu__elemento menu__actualElminAccesorio">
+            <a href="actualizar_eliminar.html" class="menu__link"
+              >Actualizar / Eliminar Accesorio</a
+            >
+          </li>
+
+          <li class="menu__elemento menu__salir">
+            <a href="index.html" class="menu__link">Salir de Sesión</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="contenido__pagina">
+        <div class="contenido__inventario">
+          <div class="inventario__encabezado">
+            <div class="encabezado__buscador">
+              <input
+                class="input input__buscar"
+                type="search"
+                name="buscarProducto"
+                id="buscarProductoAdmin"
+              />
+              <input type="submit" class="boton bton__buscar" value="Buscar" />
+            </div>
+            <div class="encabezado__titulo">
+              <h2 class="inventario__titulo">Catálogo de Productos</h2>
+            </div>
+          </div>
+          <ul class="galeria">
+            <li>
+              <p class="idAccesorio">ID: 1</p>
+              <a href=""
+                ><img
+                  src="imagenes/accesorios/billetera1.jpg"
+                  alt="Billetera1"
+                />
+              </a>
+              <p class="nombreAccesorio">Nombre de producto: Billetera 1</p>
+              <p class="cantAccesorio">Cantidad: 5</p>
+            </li>
+            <li>
+              <p class="idAccesorio">ID: 2</p>
+              <a href=""
+                ><img src="imagenes/accesorios/billetera2.jpg" alt="Billetera2"
+              /></a>
+              <p class="nombreAccesorio">Nombre de producto: Billetera 2</p>
+              <p class="cantAccesorio">Cantidad: 10</p>
+            </li>
+            <li>
+              <p class="idAccesorio">ID: 3</p>
+              <a href=""
+                ><img src="imagenes/accesorios/billetera3.jpg" alt="Bolso1"
+              /></a>
+              <p class="nombreAccesorio">Nombre de producto: Billetera 3</p>
+              <p class="cantAccesorio">Cantidad: 13</p>
+            </li>
+            <li>
+              <p class="idAccesorio">ID: 4</p>
+              <a href=""
+                ><img src="imagenes/accesorios/billetera4.jpg" alt="Bolso2"
+              /></a>
+              <p class="nombreAccesorio">Nombre de producto: Billetera 4</p>
+              <p class="cantAccesorio">Cantidad: 20</p>
+            </li>
+            <li>
+              <p class="idAccesorio">ID: 5</p>
+              <a href=""
+                ><img src="imagenes/accesorios/billetera5.jpg" alt="Collar1"
+              /></a>
+              <p class="nombreAccesorio">Nombre de producto: Billetera 5</p>
+              <p class="cantAccesorio">Cantidad: 20</p>
+            </li>
+            <li>
+              <p class="idAccesorio">ID: 6</p>
+              <a href=""
+                ><img src="imagenes/accesorios/billetera1.jpg" alt="Collar2"
+              /></a>
+              <p class="nombreAccesorio">Nombre de producto: Billetera 6</p>
+              <p class="cantAccesorio">Cantidad: 20</p>
+            </li>
+            <li>
+              <p class="idAccesorio">ID: 7</p>
+              <a href=""
+                ><img src="imagenes/accesorios/billetera2.jpg" alt="Pulsera1"
+              /></a>
+              <p class="nombreAccesorio">Nombre de producto: Billetera 7</p>
+              <p class="cantAccesorio">Cantidad: 15</p>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
