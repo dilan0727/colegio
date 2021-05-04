@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualizar / Eliminar Archivos || Mapa De Procesos </title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/f7e8b19d78.js"
+      crossorigin="anonymous"
+    ></script>
+    <style></style>
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="logo">
+        <img
+          class="logo__imagen"
+          src="imagenes/logo.png"
+          alt="Este es el logo"
+        />
+      </div>
+      <div class="titulo">
+        <h1>Portal Mapa De Procesoss</h1>
+      </div>
+    </header>
+    <div class="contenido__actualizarEliminar">
+      <nav class="contenido__menu">
+        <ul class="menu__contenedor">
+          <li class="menu__info">
+            <div class="menu__avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="menu__rol">
+              <p class="rol__nombre">
+                <span class="rol__label">Nombre:</span> Camilo Martinez
+              </p>
+              <p class="rol__cargo">
+                <span class="rol__label">Rol:</span> Administrador
+              </p>
+              <p class="rol__id">
+                <span class="rol__label">ID:</span> 111111111
+              </p>
+            </div>
+          </li>
+          <li class="menu__elemento menu__Visualizacion">
+            <a href="Visualizacion.html" class="menu__link"
+              >Visualizacion de procesos</a
+            >
+          </li>
+          <li class="menu__elemento menu__registroUsuarios ">
+            <a href="registro_usuarios.html" class="menu__link"
+              >Registro de Usuarios</a
+            >
+          </li>
+          <li class="menu__elemento menu__descargables">
+            <a href="descargasprincipal.html" class="menu__link"
+              >Archivos descargables</a
+            >
+          </li>
+          <li class="menu__elemento menu__crearArchivo">
+            <a href="crear_archivo.html" class="menu__link"
+              >Nuevo Archivo</a
+            >
+          </li>
+
+          <li class="menu__elemento menu__actualElminArchivo menu__seleccionado">
+            <a href="actualizar_eliminar.html" class="menu__link"
+              >Actualizar / Eliminar Archivos</a
+            >
+          </li>
+
+          <li class="menu__elemento menu__salir">
+            <a href="index.html" class="menu__link">Salir de Sesión</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="contenido__pagina">
+        <div class="contenido__inventario">
+          <div class="inventario__encabezado">
+            <div class="encabezado__titulo">
+             <h2 class="inventario__titulo">Actualizar archivos Descargables</h2>
+            </div>
+          </div>
+          <div class="encabezado__buscador">
+              <label for="buscarArchivo" class="buscador__label"
+                >Buscar ID:</label
+              >
+              <input
+                class="input input__buscar"
+                type="text"
+                name="buscarArchivo"
+                id="buscarArchivoAdmin"
+              />
+          </div>
+
+          <!-- Galeria de Productos -->
+          <div class="galeria">
+            <!-- Producto #1 -->
+            <form action="" class="inventario__doc" method="GET">
+              <div class="inventario__id">
+                <h4 class="doc__id">ID: 1</h4>
+              </div>
+              <div class="inventario__cargarArchivo">
+                <label
+                  for="Archivo1"
+                  class="doc__etiqueta cargarArchivo__label"
+                  >Cargar nuevo docuemento</label
+                >
+                <input
+                  type="file"
+                  class="doc__cargarArchivo"
+                  name="Archivo1"
+                  id="Archivo1"
+                />
+              </div>
+              <div class="inventario__nombre">
+                <label
+                  for="archivo1Nombre"
+                  class="doc__etiqueta nombre__label"
+                  >Nombre:
+                </label>
+                <input
+                  type="text"
+                  class="input doc__nombre"
+                  name="archivo1Nombre"
+                  id="archivo1Nombre"
+                  value="problematicas"
+                />
+              </div>
+              <div class="inventario__destino">
+                <label
+                  for="archivo1destino"
+                  class="doc__etiqueta destino__label"
+                  >Numero de carpeta destino:
+                </label>
+                <input
+                  type="number"
+                  class="input doc__destino"
+                  name="archivo1destino"
+                  id="archivo1destino"
+                  value="2"
+                />
+              </div>
+              <div class="inventario__boton">
+                <input
+                  class="boton boton__actualizar"
+                  type="submit"
+                  value="Actualizar"
+                />
+                <input
+                  class="boton boton__eliminar"
+                  type="submit"
+                  value="Eliminar"
+                />
+              </div>
+            </form>
+            <form action="" class="inventario__doc" method="GET">
+              <div class="inventario__id">
+                <h4 class="doc__id">ID: 2</h4>
+              </div>
+              <div class="inventario__cargarArchivo">
+                <label
+                  for="Archivo1"
+                  class="doc__etiqueta cargarArchivo__label"
+                  >Cargar nuevo docuemento</label
+                >
+                <input
+                  type="file"
+                  class="doc__cargarArchivo"
+                  name="Archivo1"
+                  id="Archivo1"
+                />
+              </div>
+              <div class="inventario__nombre">
+                <label
+                  for="archivo1Nombre"
+                  class="doc__etiqueta nombre__label"
+                  >Nombre:
+                </label>
+                <input
+                  type="text"
+                  class="input doc__nombre"
+                  name="archivo1Nombre"
+                  id="archivo1Nombre"
+                  value="acciones"
+                />
+              </div>
+              <div class="inventario__destino">
+                <label
+                  for="archivo1destino"
+                  class="doc__etiqueta destino__label"
+                  >Numero de carpeta destino:
+                </label>
+                <input
+                  type="number"
+                  class="input doc__destino"
+                  name="archivo1destino"
+                  id="archivo1destino"
+                  value="2"
+                />
+              </div>
+              <div class="inventario__boton">
+                <input
+                  class="boton boton__actualizar"
+                  type="submit"
+                  value="Actualizar"
+                />
+                <input
+                  class="boton boton__eliminar"
+                  type="submit"
+                  value="Eliminar"
+                />
+              </div>
+            </form>      
+          </div>
+        </div>
+        <!-- 
+
+          <div class="contenido__forma">
+            <form action="" method="GET" enctype="text/plain">
+              <div class="forma__titulo">
+                <h3 class="titulo__sesion">Inicio de Sesión</h3>
+              </div>
+              <div class="forma__datos">
+                <label class="input__label" for="usuario">Usuario</label>
+                <input
+                  class="input"
+                  type="text"
+                  name="usuario"
+                  id="usuario"
+                  placeholder=""
+                  required
+                />
+                <label class="input__label" for="password">Contraseña</label>
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder=""
+                  required
+                />
+                <div class="checkbox__admin">
+                  <input type="checkbox" name="esAdmin" id="esAdmin" />
+                  <label class="input__label" for="esAdmin"
+                    >Administrador del Sistema</label
+                  >
+                </div>
+              </div>
+              <div class="forma__boton">
+                <input
+                  class="boton__iniciar"
+                  type="submit"
+                  value="Iniciar Sesión"
+                />
+              </div>
+              <div class="olvidarpassword">
+                <a class="link__olvidar" href="">¿Olvidaste tu Contraseña?</a>
+              </div>
+            </form>
+          </div>
+         -->
+      </div>
+    </div>
+  </body>
+</html>
