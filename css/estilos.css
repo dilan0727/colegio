@@ -1,0 +1,641 @@
+:root {
+  --color-principal: #46c21d;
+  --color-medio: #6670c1;
+  --color-claro: #d0e2f4;
+  --color-secundario: #46c21d;
+  --color-gris: rgb(233, 225, 225);
+  --color-gris-oscuro: #d2d2d2;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  background: var(--color-gris);
+}
+
+/* Utilidades */
+.boton {
+  width: 10%;
+  height: 30px;
+  border: none;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
+}
+
+.forma__general {
+  padding: 20px 0px;
+  margin: auto;
+  border: 3px solid #555;
+  background: #d0e2f4;
+  width: 380px;
+}
+
+.input {
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--color-medio);
+  padding: 2px 2px 2px 8px;
+}
+
+/* Cabecera */
+.cabecera {
+  background: var(--color-principal);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 15vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__imagen {
+  width: 100px;
+}
+
+.titulo {
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/* Contenido Pagina */
+.contenido__principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  box-sizing: border-box;
+}
+
+/* Imagen */
+.contenido__imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen__principal {
+  background-size: cover;
+  box-sizing: border-box;
+  width: 450px;
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+/* Formulario */
+.contenido__forma {
+  flex: 1;
+}
+
+.titulo__sesion {
+  text-align: center;
+  border: 1px solid white;
+  border-top: 1px solid #d0e2f4;
+  border-left: 1px solid #d0e2f4;
+  border-right: 1px solid #d0e2f4;
+  
+}
+
+.forma__titulo {
+  width: 90%;
+  margin: 0 auto;
+  color: var(--color-principal);
+}
+.password__icono {
+  position: absolute;
+  top: 30px;
+  left: 88%;
+  color: #1a29a2;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.password__icono--ocultar {
+  visibility: hidden;
+}
+
+.label__password {
+  position: relative;
+}
+
+.forma__datos {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.forma__boton {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.boton__iniciar {
+  height: 30px;
+  width: 100%;
+}
+
+.input__label {
+  margin: 15px 0 2px 0;
+}
+
+.checkbox__admin {
+  margin: 10px 0 20px 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.checkbox__admin input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox__admin .input__label {
+  color: var(--color-medio);
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.link__olvidar {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 14px;
+  color: var(--color-principal);
+}
+
+.link__olvidar:hover {
+  color: blue;
+}
+
+.forma__error {
+  font-size: 14px;
+  color: #e43939;
+}
+
+@media only screen and (max-width: 850px) {
+  .contenido__principal,
+  .contenido__password {
+    flex-direction: column;
+  }
+
+  .titulo {
+    font-size: 12px;
+  }
+
+  .imagen__principal,
+  .imagen__password {
+    width: 200px;
+  }
+
+  .contenido__imagen {
+    flex: 0;
+    margin-bottom: 20px;
+  }
+  .contenido__forma {
+    flex: 0;
+  }
+}
+
+/* =========================================================
+Pagina Recuperar Contrasena
+============================================================
+*/
+
+.contenido__password {
+  display: flex;
+  flex-direction: row;
+  margin: 200px 50px 100px 50px;
+}
+
+.imagen__password {
+  width: 345px;
+  object-fit: contain;
+}
+
+.forma__password {
+  height: 300px;
+}
+
+.input.input__correo {
+  height: 40px;
+  font-size: large;
+  margin: 10px 0;
+}
+.boton__crear_usuario{
+  width: 100%;
+}
+.boton__crear_Archivo{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.boton__enviar {
+  height: 45px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .contenido__password {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+  }
+
+  .imagen__password {
+    width: 180px;
+  }
+}
+
+/* =========================================================
+Menu Administrador / Usuario
+============================================================
+*/
+
+.contenido__administrador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.contenido__menu {
+  min-width: 350px;
+  background: var(--color-gris-oscuro);
+  height: 85vh;
+}
+
+.menu__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  list-style: none;
+  border-left: 15px solid var(--color-principal);
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu: Avatar con info */
+.menu__info {
+  display: flex;
+  align-items: center;
+  background: var(--color-gris-oscuro);
+}
+
+.menu__avatar {
+  margin: 0 15px;
+}
+
+.menu__avatar i {
+  font-size: 40px;
+  padding: 10px;
+  background: #000;
+  border-radius: 50%;
+  color: var(--color-gris-oscuro);
+}
+
+.menu__rol {
+  font-size: 13px;
+}
+
+.rol__label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Lista de Elementos de navegabilidad */
+.menu__elemento {
+  border-top: 1px solid white;
+  background: var(--color-claro);
+}
+
+.menu__elemento:nth-of-type(2) {
+  border: none;
+}
+
+
+.menu__elemento:hover {
+  background: var(--color-secundario);
+}
+
+.menu__elemento:hover .menu__link {
+  color: white;
+}
+
+.menu__link {
+  text-decoration: none;
+  display: block;
+  color: var(--color-principal);
+  cursor: pointer;
+  padding: 20px 15px;
+}
+
+.menu__seleccionado {
+  background: var(--color-principal);
+}
+
+.menu__seleccionado .menu__link {
+  color: white;
+}
+
+/* =========================================================
+Media Queries
+============================================================
+*/
+@media only screen and (max-height: 650px) and (max-width: 850px) {
+  .contenido__imagen {
+    display: none;
+  }
+}
+
+/* 
+=========================================================
+Pagina Crear Accesorio
+============================================================
+*/
+.contenido__crearArchivo {
+  flex: 1;
+}
+
+.forma__crearArchivo {
+  padding: 10px;
+}
+
+.contenedor__crear_producto {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.input__imagen {
+  border: none;
+}
+
+/* 
+=========================================================
+Pagina Crear Usuario
+============================================================
+*/
+.contenido__crearUsuario {
+  flex: 1;
+}
+
+.forma__crearUsuario {
+  padding: 10px;
+}
+
+.contenedor__crear_usuario {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* 
+=========================================================
+Pagina Actualizar / Eliminar Accesorio
+============================================================
+*/
+
+.contenido__actualizarEliminar {
+  display: flex;
+  margin-top: 15vh;
+}
+
+.contenido__pagina {
+  width: 100%;
+  padding: 10px 30px;
+  
+  
+
+}
+
+.inventario__encabezado {
+  display: flex;
+
+  /* border: 1px solid green; */
+}
+
+.encabezado__buscador {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px ;
+  
+
+  
+
+}
+
+.input__buscar {
+  margin: 5px 5px;
+  
+}
+
+.encabezado__titulo {
+  color: var(--color-principal);
+  margin: 0 auto;
+}
+
+
+.inventario__galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  background: var(--color-claro);
+  padding: 15px;
+}
+
+
+.contenido__inventario{
+  
+  margin: 20px ;
+}
+.doc__id {
+  margin: 2px 10px;
+  text-align: left;
+}
+
+.inventario__cargarArchivo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 14px;
+}
+
+
+.doc__etiqueta {
+  font-size: 15px;
+}
+
+.input__documento{
+  
+  border: 0px ;
+  
+}
+.inventario__nombre{
+  margin-top: 8px;
+  
+}
+.inventario__destino {
+  margin-top: 8px;
+}
+.inventario__boton {
+
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+
+
+
+.boton__actualizar,
+.boton__eliminar {
+  width: 16%;
+  margin: 5px;
+  
+}
+
+/* 
+=========================================================
+Pagina Administrador de Productos
+============================================================
+*/
+
+.contenido__administradorProductos {
+  display: flex;
+  margin-top: 15vh;
+}
+
+/* 
+=========================================================
+Pagina descargas
+============================================================
+*/
+
+.contenido__usuario {
+  display: flex;
+  margin-top: 15vh;
+  width: 100%;
+}
+
+.galeria {
+  width: 80%;
+  padding: 20px;
+  border: 3px solid #555;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: var(--color-claro);
+  grid-gap: 20px;
+}
+.inventario__titulo{
+  font-style: oblique;
+}
+.galeria li {
+  border: 0px solid var(--color-principal);
+  padding: 7px ;
+}
+
+
+.Name {
+  margin: 0;
+  padding: 0px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.identificador {
+  margin: 0;
+  font-style: italic;
+  padding: 0px;
+  
+}
+.carpet {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  margin: 0;
+  font-style: italic;
+  padding: 0px;
+  
+}
+
+
+.btn{
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 100%;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--color-principal);
+  font-size: 18px;
+  padding-top: 5px;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border: 2px solid transparent;
+  margin-bottom: 60px;
+  z-index: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+  
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: cyan;
+    transition: all 500ms ease;
+    z-index: -1;
+  }
+.btnes:hover{
+  background-color: cyan;
+  box-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 20px cyan;
+  color: #555; 
+}
+
+
+
+
+
+
+
